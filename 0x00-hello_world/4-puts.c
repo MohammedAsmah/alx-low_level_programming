@@ -1,11 +1,10 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - A C program that prints a line using the functoin puts
+ * main - Entry point
  * Return: Always 0 (Success)
-*/
+ */
 int main(void)
 {
-gcc -c $CFILE -o 
-Puts ("\"Programming is like building a multilingual puzzle"
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
