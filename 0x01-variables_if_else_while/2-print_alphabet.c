@@ -1,0 +1,16 @@
+#include <stdio.h>
+/**
+ * main - Prints all alphabets
+ * Return: always 0
+*/
+int main(void)
+{
+	char letter = a
+while (letter <= z)
+{
+putchar("%c", letter);
+letter++;
+}
+putchar("\n");
+return (0);
+}
