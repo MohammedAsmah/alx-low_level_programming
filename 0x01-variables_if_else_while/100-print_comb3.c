@@ -2,21 +2,30 @@
 /**
  * main - prints all possible different combinations of two digits
  * Return: always 0
-*/
+ */
 int main(void)
 {
-	for (int i = 0; i < 10; i++)
+	int a = 0;
+	int b = 1;
+
+	while (a <= '8')
 	{
-	for (int j = i + 1; j < 10; j++)
+	while (b <= '9')
 	{
-		putchar(i + '0');
-		putchar(j + '0');
-		if (i != 8 || j != 9)
+		if (a != b && a < b)
 		{
+		putchar(a + '0');
+		putchar(b + '0');
+			if (a != '8' && b != '9')
+			{
 			putchar(',');
 			putchar(' ');
+			}
 		}
+		b++;
 	}
+	a++;
+	b = a + '1';
 	}
 putchar('\n');
 return (0);
