@@ -3,29 +3,30 @@
  * main - prints all possible different combinations of two digits
  * Return: always 0
  */
+
 int main(void)
 {
-	int a = 0;
-	int b = 1;
+	int i = 0;
+	int j = 1;
 
-	while (a <= '8')
+	while (i < 10)
 	{
-	while (b <= '9')
-	{
-		if (a != b && a < b)
+		while (j < 10)
 		{
-		putchar(a + '0');
-		putchar(b + '0');
-			if (a != '8' && b != '9')
+			if (i != j)
 			{
-			putchar(',');
-			putchar(' ');
+			putchar(i + '0');
+			putchar(j + '0');
+				if (i != 8 || j != 9)
+				{
+				putchar(',');
+				putchar(' ');
+				}
 			}
+			j++;
 		}
-		b++;
-	}
-	a++;
-	b = a + '1';
+		i++;
+		j = i + 1;
 	}
 putchar('\n');
 return (0);
