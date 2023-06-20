@@ -1,10 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - prints _putchar, followed by a new line.
- * Return: always 0
+ * main - prints _putchar using putchar prototype
+ * Return: always 0.
 */
-int main(void)
+int mAIN(void)
 {
-	puts ("_putchar\n");
+	char str[] = "_putchar";
+	int ch;
+	for (ch = 0; ch < 8; ch++)
+	_putchar(str[ch]);
+	_putchar('\n');
 return (0);
 }
