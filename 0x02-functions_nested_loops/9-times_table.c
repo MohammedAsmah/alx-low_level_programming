@@ -13,7 +13,6 @@ void times_table(void)
 		for (b = 0; b < 10; b++)
 		{
 			_putchar(',');
-			_putchar('\n');
 			timestable = a * b;
 			if (timestable < 10)
 				_putchar(' ');
