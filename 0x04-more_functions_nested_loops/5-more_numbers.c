@@ -15,10 +15,10 @@ void more_numbers(void)
 			c = b;
 			if (b > 9)
 			{
-				_putchar(1 + '0');
+				_putchar(1 + 48);
 				c = b % 10;
 			}
-			_putchar(c + '0');
+			_putchar(c + 48);
 		}
 		_putchar('\n');
 	}
